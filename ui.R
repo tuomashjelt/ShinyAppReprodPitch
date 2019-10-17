@@ -1,22 +1,15 @@
-#
-# This is the user-interface definition of a Shiny web application. You can
-# run the application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-# 
-#    http://shiny.rstudio.com/
-#
+# This is the user-interface definition of a Shiny web application. 
 
 library(shiny)
 library(datasets)
 
-# Define UI for application that draws a histogram
+# Define UI for application that draws chosen plots
 shinyUI(fluidPage(
   
   # Application title
   titlePanel("Cars - A deeper look into the variables DIST and SPEED"), 
   
-  # Sidebar with a slider input for number of bins 
+  # Sidebar with radio buttons
   sidebarLayout(
     sidebarPanel(
       #implementing radio buttons       
