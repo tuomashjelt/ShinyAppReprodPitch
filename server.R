@@ -1,15 +1,8 @@
-#
-# This is the server logic of a Shiny web application. You can run the 
-# application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-# 
-#    http://shiny.rstudio.com/
-#
+# This is the server logic of a Shiny web application.
 
 library(shiny)
 
-# Define server logic required to draw a histogram
+# Define server logic required to draw plots
 shinyServer(function(input, output) {
    
         output$chosenPlot <- renderPlot({
